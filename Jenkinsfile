@@ -1,6 +1,6 @@
-pipeline{
+pipeline {
 	agent any
-	stages{
+	stages {
 		stage('CheckoutGit') {
 			git poll: true, rul:'https://github.com/JEfrainDR/Jenkins-Test.git'
 		}
