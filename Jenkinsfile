@@ -2,7 +2,7 @@ pipeline {
 	agent any
 	stages {
 		stage('CheckoutGit') {
-			git poll: true, rul:'https://github.com/JEfrainDR/Jenkins-Test.git'
+			git pull: true, rul:'https://github.com/JEfrainDR/Jenkins-Test.git'
 		}
 		stage('CreateVirtualEnv') {
 			steps {
