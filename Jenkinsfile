@@ -1,8 +1,8 @@
 pipeline {
 	agent any
 	stages {
-		stage('CheckoutGit') {
-			git pull: true, rul:'https://github.com/JEfrainDR/Jenkins-Test.git'
+		stage('Checkout') {
+			git pull: true, url:'https://github.com/JEfrainDR/Jenkins-Test.git'
 		}
 		stage('CreateVirtualEnv') {
 			steps {
