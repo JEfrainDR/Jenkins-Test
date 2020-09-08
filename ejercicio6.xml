@@ -1,0 +1,27 @@
+﻿<?xml-stylesheet type="text/css" href="ejercicio6.css"?>
+<estudiante>
+<nombres>José Efraín</nombres>
+<apellidos>Díaz Rivas</apellidos>
+<carnet>DR17010</carnet>
+<ciclo>
+<idciclo>Ciclo II 2019</idciclo>
+<materia>
+<codigo>TPI115</codigo>
+<nommateria>Tecnologias de Programacion para Internet</nommateria>
+<horariosteo>GT: Martes y Viernes 8:05am-9:45am</horariosteo>
+<horarioslab>GL: Miercoles 11:35am-1:15pm</horarioslab>
+</materia>
+<materia>
+<codigo>IEC115</codigo>
+<nommateria>Ingenieria Economica</nommateria>
+<horariosteo>GT: Martes y Viernes 9:50am-11:30am</horariosteo>
+<horarioslab>GD: Jueves 8:05am-9:45am</horarioslab>
+</materia>
+<materia>
+<codigo>SIC115</codigo>
+<nommateria>Sistemas Contables</nommateria>
+<horariosteo>GT: Martes y Viernes 6:20am-8:00am</horariosteo>
+<horarioslab>GD: Jueves 6:20am-8:00am</horarioslab>
+</materia>
+</ciclo>
+</estudiante>
