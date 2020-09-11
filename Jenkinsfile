@@ -28,7 +28,7 @@ pipeline {
 		}
 		stage('BuildDocker') {
 			steps {
-				sh '''docker build -t ${WORKSPACE}/DockerFiles/ .'''
+				sh '''docker build ${WORKSPACE}/DockerFiles/'''
 			      }
 		}
 		stage('PushDockerImage') {
