@@ -18,7 +18,8 @@ pipeline {
 		}
 		stage('TestApp') {
 			steps {
-				sh '''bash -c "source ${WORKSPACE}/env/bin/activate && ${WORKSPACE}/env/bin/python && cd .."'''
+				sh '''cd newproject/ && python3 manage.py runserver'''
+				
 			}
 		}
 		stage('RunApp') {
@@ -28,7 +29,7 @@ pipeline {
 		}
 		stage('BuildDocker') {
 			steps {
-				sh '''sudo docker build ${WORKSPACE}/DockerFiles/'''
+				sh '''sudo -u root -p JEfrainDR314602820300 docker build ${WORKSPACE}/DockerFiles/'''
 			      }
 		}
 		stage('PushDockerImage') {
