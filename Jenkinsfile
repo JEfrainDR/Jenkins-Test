@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage('TestApp') {
 			steps {
-				sh '''cd newproject/ && python3 manage.py makemigrations && python3 manage.py migrate'''
+				sh '''bash -c "source ${WORKSPACE}/env/bin/activate && ${WORKSPACE}/env/bin/python && cd .."'''
 				
 			}
 		}
