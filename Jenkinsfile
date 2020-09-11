@@ -28,7 +28,7 @@ pipeline {
 		}
 		stage('BuildDocker') {
 			steps {
-				sh '''docker build ${WORKSPACE}/DockerFiles/'''
+				sh '''sudo docker build ${WORKSPACE}/DockerFiles/'''
 			      }
 		}
 		stage('PushDockerImage') {
