@@ -29,7 +29,7 @@ pipeline {
 		}
 		stage('BuildDocker') {
 			steps {
-				sh '''sudo -u root -p JEfrainDR314602820300 docker build ${WORKSPACE}/DockerFiles/'''
+				sh '''docker build ${WORKSPACE}/DockerFiles/'''
 			      }
 		}
 		stage('PushDockerImage') {
