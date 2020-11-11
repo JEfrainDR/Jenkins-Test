@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage('InstallRequirements') {
 			steps {
-				sh '''bash -c "ls"'''
+				sh '''bash -c "pip3 install -r requirements.txt"'''
 			}
 		}
 	}
