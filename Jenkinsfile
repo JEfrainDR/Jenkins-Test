@@ -16,6 +16,13 @@ pipeline {
 				sh '''bash -c "pip3 install -r requirements.txt"'''
 			}
 		}
+		stage('MakeMigrations') {
+			steps {
+				sh '''bash -c "cd newproyect/ && python manage.py migrate"'''
+				
+			}
+		}
+	
 	}
 }
 
