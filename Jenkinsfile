@@ -29,7 +29,6 @@ pipeline {
 		stage('TestApp') {
 			steps {
 				sh '''bash -c "cd PRUEBA/ && python3 manage.py test"'''
-				
 			}
 		}
 	}
