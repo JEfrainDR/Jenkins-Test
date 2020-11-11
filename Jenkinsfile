@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage('MakeMigrations') {
 			steps {
-				sh '''bash -c "cd newproyect/ && python manage.py migrate"'''
+				sh '''bash -c "cd newproject/ && python manage.py migrate"'''
 				
 			}
 		}
