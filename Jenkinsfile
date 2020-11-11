@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage('MakeMigrations') {
 			steps {
-				sh '''bash -c "cd WASP_TOO115/ && python3 manage.py migrate"'''
+				sh '''bash -c "cd PRUEBA/ && python3 manage.py migrate"'''
 				
 			}
 		}
