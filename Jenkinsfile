@@ -23,7 +23,13 @@ pipeline {
 		}
 		stage('MigrateToDatabase') {
 			steps {
-				sh '''bash -c "ls"'''
+				sh '''bash -c "cd PRUEBA/ && python3 manage.py migrate"'''
+			}
+		}
+		stage('TestApp') {
+			steps {
+				sh '''bash -c "cd PRUEBA/ && python3 manage.py test"'''
+				
 			}
 		}
 	}
