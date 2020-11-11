@@ -23,7 +23,7 @@ pipeline {
 		}
 		stage('MigrateToDatabase') {
 			steps {
-				sh '''bash -c "python3 manage.py migrate"'''
+				sh '''bash -c "ls"'''
 			}
 		}
 	}
