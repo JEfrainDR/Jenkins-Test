@@ -16,13 +16,16 @@ pipeline {
 				sh '''bash -c "pip3 install -r requirements.txt"'''
 			}
 		}
-		stage('MakeMigrations') {
+		stage('MakeDJangoMigrations') {
 			steps {
-				sh '''bash -c "cd PRUEBA/ && python3 manage.py migrate"'''
-				
+				sh '''bash -c "cd PRUEBA/ && python3 manage.py makemigrations"'''
 			}
 		}
-	
+		stage('MigrateToDatabase') {
+			steps {
+				sh '''bash -c "python3 manage.py migrate"'''
+			}
+		}
 	}
 }
 
