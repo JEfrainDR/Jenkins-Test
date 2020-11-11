@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage('InstallRequirements') {
 			steps {
-				sh '''bash -c "source ${WORKSPACE}/env/bin/pip install -r requirements.txt"'''
+				sh '''bash -c "pip install -r env/requirements.txt"'''
 			}
 		}
 	}
